@@ -4,9 +4,45 @@
   <meta charset="UTF-8>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Family Worship Guide</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Welcome to the Family Worship Guide</h1>
-  <p>Thios site is under construction.</p>
+  <header>
+    <DIV class="logo">
+      <h1>Christ Our Hope Church, PCA</h1> <!--Add logo-->
+    </DIV>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">My Account</a> </li>
+        <li><a href="#">Progress</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="daily-worship">
+      <h2>Today's Worship Guide</h2>
+      <p id="personal-reading">Personal Reading:</p>
+      <p id="family-reading">Family Reading:</p>
+      <p id="catechism-question">Catechism Question:</p>
+      <p id="memory-verses">Memory Verses:</p>
+      <p id="hymn">Hymn:</p>
+    </section>
+
+    <section id="progress-tracker">
+      <h3>Your Progress</h3>
+      <input type="checkbox" id="completed" name="completed">
+      <label for="completed">Mark Today as Completed</label>
+    </section>
+  </main>
+
+  <footer>
+    <p>© Christ Our Hope Church, PCA</p>
+  </footer>
+
+  <script src="app.js"></script>
+
 </body>
 </html>

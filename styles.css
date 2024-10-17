@@ -1,0 +1,44 @@
+/* Set Global styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #5F1214;
+    color: #F2F2F2;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #F2F2F2;
+    text-decoration: none;
+}
+
+/* Main Content styling */
+main {
+    padding: 2rem;
+}
+
+/* Footer Styling  */
+footer {
+    background-color:#F5E0D3 ;
+    color: #2C2C2C;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
