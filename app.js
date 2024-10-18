@@ -35,11 +35,11 @@ fetch('worship-guide.json')
     //If conent  is found, display it on the page
     if (content) {
         // Create Bible Gateway link URLs
-        const personalReadingLink = 'https://www.biblegateway.com/passage/?search=${encodeURIComponent(content.personalReading)}&version=ESV'
+        const privateReadingLink = 'https://www.biblegateway.com/passage/?search=${encodeURIComponent(content.privateReading)}&version=ESV'
         const familyReadingLink =  'https://www.biblegateway.com/passage/?search=${encodeURIComponent(content.familyReading)}&version=ESV'
 
-        //Display the personal and family readings as clickable links
-        document.getElementById('personal-reading').innerHTML = `Personal Reading: <a href="${personalReadingLink}" target="_blank">${content.personalReading}</a>`;
+        //Display the private and family readings as clickable links
+        document.getElementById('private-reading').innerHTML = `private Reading: <a href="${privateReadingLink}" target="_blank">${content.privateReading}</a>`;
         document.getElementById('family-reading').innerHTML =  `Family Reading: <a href="${familyReadingLink}" target="_blank">${content.familyReading}</a>`;
 
         // Display other content as normal text
@@ -47,7 +47,7 @@ fetch('worship-guide.json')
         document.getElementById('memory-verses'),textContent = 'Memory Verse: ${content.memoryVerse}';
         document.getElementById('hymn'),textContent = 'Hymn:: ${content.hymn}';
     } else {
-        document.getElementById('personal-reading').textContent = 'No content available for today';
+        document.getElementById('private-reading').textContent = 'No content available for today';
         document.getElementById('family-reading').textContent = '';
         document.getElementById('catechism-question').textContent = '';
         document.getElementById('memory-verses').textContent = '';
